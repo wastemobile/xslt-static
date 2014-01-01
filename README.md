@@ -12,4 +12,12 @@ XSLT 作為核心的編譯引擎（使用 Mac 與 Linux 都內建的 `xsltproc`�
 
 > To process individual files, open the `workspace/build` file and find the xsltproc command referring to the HTML file you would like to process and run the command.
 
-to continus...
+## 架構
+
+完全自行建構。
+
+基本上 `xsltproc -v -o 目標檔案 XSL檔案 XML檔案` 就完成了，剩餘的事務通通都在 XSL 檔案中指定（使用 utilities、取用資源、遞迴或任何進階處理）。
+
+為了 Symphony CMS 準備專案架構，由於後續可以將所有靜態XML資源通通變成 Symphony 提供的動態資源，可以快速移轉到動態網站的實作。
+
+除非你用 Symphony CMS，否則無需理會。
