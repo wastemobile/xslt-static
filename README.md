@@ -1,24 +1,15 @@
 # XSLT Static Site Generator
 
-## HTML Templates
+## 這是什麼？
 
-This markup library contains the XML, XSLT and HTML used to build a basic demo of an XSLT static site generator. It is being maintained as a [Git repository on GitHub](https://github.com/bauhouse/xslt-static-site-generator).
+根據 [Git repository on GitHub](https://github.com/bauhouse/xslt-static-site-generator) 建立，是一個以 XML 為核心、XSLT 為模板語言與轉換工具，製作靜態 HTML 網站的生成器，與 Jekyll(Ruby)、Pico(PHP)、Assemble(Node.js) 算是同一種東西，希望能夠長大成 Static，同時也是無痛升級成動態 Symphony CMS Project 的基礎。
 
-### Preprocessing HTML
+### 製作 HTML
 
-XSLT is being used as a preprocessor (using xsltproc) to output valid, well-formed XHTML structure. This process of static site generation should be easy to manage on any Unix-based system (Mac, Linux) without having to install any software. On Windows, install xsltproc.
+XSLT 作為核心的編譯引擎（使用 Mac 與 Linux 都內建的 `xsltproc`），用來產生有效且良好（valid and well-formed）的 XHTML（更嚴謹語法的 HTML）。在 Mac 與 Linux 系統上無需安裝任何程式即可運作，視窗需自行加裝 xsltproc（未經測試）。
 
-To process HTML, run the `./build` script in the same directory as this README file.
+> To process HTML, run the `./build` script in the same directory as this README file.
 
-To process individual files, open the `workspace/build` file and find the xsltproc command referring to the HTML file you would like to process and run the command.
+> To process individual files, open the `workspace/build` file and find the xsltproc command referring to the HTML file you would like to process and run the command.
 
-### Design Templates
-
-The page layouts can be viewed in a browser at the following URLs: 
-
-* http://bauhouse.github.com/xslt-static-site-generator/
-* http://bauhouse.github.com/xslt-static-site-generator/news/
-* http://bauhouse.github.com/xslt-static-site-generator/events/
-* http://bauhouse.github.com/xslt-static-site-generator/services/
-* http://bauhouse.github.com/xslt-static-site-generator/about/
-* http://bauhouse.github.com/xslt-static-site-generator/contact/
+to continus...
